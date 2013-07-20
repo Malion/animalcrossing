@@ -14,22 +14,24 @@
     	<meta name="HandheldFriendly" content="True" />
     	<meta name="MobileOpimized" content="320" />
     	<title>Video Game Review's</title>
-		<link rel="stylesheet" href="css/themes/MiUweek4.css" />
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/themes/animalcrossing.css" />
         <script src="cordova.js"></script>
         <script src="js/libs/modernizr.custom.min.js"></script>
 		<script type="text/javascript" src="js/storage.js"></script>
     </head>
     <body>
-    	<div data-role="page" id="home" data-theme="a">
+    	<div data-add-back-btn="true" data-role="page" id="home" data-theme="a">
         	<div data-role="header" data-position="fixed">
             	<h1>Animal Crossing: New Leaf</h1>
              </div>
              <div data-role="content">
-             	<div>
-                    <ul data-inset="true" data-filter="true" data-role="listview">
-                        <li data-role="list-divider"><h3>Friendly Faces</h3></li>
+			 	<div>
+					<img style="display:block; margin-left:auto; margin-right:auto" src="img/animalcrossing.jpg" />
+				</div>
+             	<div data-role="collapsible">
+					<h3>Neighbors</h3>
+                    <ul data-inset="true"  data-role="listview">
                         <li><a href="#anteaters">Anteaters</a></li>
                         <li><a href="#bearcubs">Bear Cubs</a></li>
                         <li><a href="#bears">Bears</a></li>
@@ -72,36 +74,37 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="anteaters" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="anteaters" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Anteaters</h1>
+            	<h1>Anteaters</h1>
              </div>
              <div data-role="content">
-             	<div id="anteaterlist" data-role="collapsible-set" data-inset="true">
+             	<div>
+					<ul id="anteaterlist" data-inset="true"  data-role="listview">
+					</ul>
                 </div>
              </div>
              <div data-role="footer" data-position="fixed" data-id="nav">
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="bearcubs" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="bearcubs" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Bear Cubs</h1>
+            	<h1>Bear Cubs</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="bearcubslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="bearcubslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -109,20 +112,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="bears" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="bears" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Bears</h1>
+            	<h1>Bears</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="bearslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="bearslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -130,20 +131,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="birds" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="birds" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Birds</h1>
+            	<h1>Birds</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="birdslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="birdslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -151,20 +150,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="bulls" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="bulls" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Bulls</h1>
+            	<h1>Bulls</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="bullslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="bullslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -172,20 +169,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="cats" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="cats" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Cats</h1>
+            	<h1>Cats</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="catslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="catslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -193,20 +188,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="chickens" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="chickens" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Chickens</h1>
+            	<h1>Chickens</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="chickenslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="chickenslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -214,20 +207,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="cows" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="cows" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Cows</h1>
+            	<h1>Cows</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="cowslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="cowslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -235,20 +226,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="crocodiles" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="crocodiles" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Crocodiles</h1>
+            	<h1>Crocodiles</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="crocodileslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="crocodileslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -256,20 +245,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="deer" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="deer" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Deer</h1>
+            	<h1>Deer</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="deerlist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="deerlist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -277,20 +264,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="dogs" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="dogs" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Dogs</h1>
+            	<h1>Dogs</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="dogslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="dogslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -298,20 +283,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="ducks" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="ducks" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Ducks</h1>
+            	<h1>Ducks</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="duckslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="duckslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -319,20 +302,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="eagles" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="eagles" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Eagles</h1>
+            	<h1>Eagles</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="eagleslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="eagleslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -340,20 +321,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="elephants" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="elephants" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Elephants</h1>
+            	<h1>Elephants</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="elephantslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="elephantslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -361,20 +340,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="frogs" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="frogs" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Frogs</h1>
+            	<h1>Frogs</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="frogslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="frogslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -382,20 +359,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="goats" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="goats" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Goats</h1>
+            	<h1>Goats</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="goatslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="goatslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -403,20 +378,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="gorillas" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="gorillas" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Gorillas</h1>
+            	<h1>Gorillas</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="gorillaslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="gorillaslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -424,20 +397,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="hamsters" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="hamsters" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Hamsters</h1>
+            	<h1>Hamsters</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="hamsterslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="hamsterslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -445,20 +416,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="hippopotamuses" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="hippopotamuses" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Hippopotamuses</h1>
+            	<h1>Hippopotamuses</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="hippopotamuseslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="hippopotamuseslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -466,20 +435,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="horses" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="horses" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Horses</h1>
+            	<h1>Horses</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="horseslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="horseslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -487,20 +454,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="kangaroos" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="kangaroos" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Kangaroos</h1>
+            	<h1>Kangaroos</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="kangarooslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="kangarooslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -508,20 +473,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="koalas" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="koalas" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Koalas</h1>
+            	<h1>Koalas</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="koalaslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="koalaslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -529,20 +492,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="lions" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="lions" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Lions</h1>
+            	<h1>Lions</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="lionslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="lionslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -550,20 +511,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="monkeys" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="monkeys" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Monkeys</h1>
+            	<h1>Monkeys</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="monkeyslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="monkeyslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -571,20 +530,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="mice" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="mice" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Mice</h1>
+            	<h1>Mice</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="micelist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="micelist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -592,20 +549,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="octopuses" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="octopuses" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Octopuses</h1>
+            	<h1>Octopuses</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="octopuseslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="octopuseslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -613,20 +568,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="ostriches" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="ostriches" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Ostriches</h1>
+            	<h1>Ostriches</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="ostricheslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="ostricheslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -634,20 +587,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="penguins" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="penguins" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Penguins</h1>
+            	<h1>Penguins</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="penguinslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="penguinslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -655,20 +606,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="pigs" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="pigs" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Pigs</h1>
+            	<h1>Pigs</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="pigslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="pigslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -676,20 +625,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="rabbits" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="rabbits" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Rabbits</h1>
+            	<h1>Rabbits</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="rabbitslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="rabbitslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -697,20 +644,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="rhinoceroses" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="rhinoceroses" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Rhinoceroses</h1>
+            	<h1>Rhinoceroses</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="rhinoceroseslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="rhinoceroseslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -718,20 +663,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="sheep" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="sheep" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Sheep</h1>
+            	<h1>Sheep</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="sheeplist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="sheeplist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -739,20 +682,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="squirrels" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="squirrels" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Squirrels</h1>
+            	<h1>Squirrels</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="squirrelslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="squirrelslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -760,20 +701,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="tigers" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="tigers" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Tigers</h1>
+            	<h1>Tigers</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="tigerslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="tigerslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -781,20 +720,18 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
         </div>
-        <div data-role="page" id="wolves" data-theme="a">
+        <div data-add-back-btn="true" data-role="page" id="wolves" data-theme="a">
         	<div data-role="header" data-position="fixed">
-            	<h1>Friendly Faces: Wolves</h1>
+            	<h1>Wolves</h1>
              </div>
              <div data-role="content">
              	<div>
-					<ul id="wolveslist" data-inset="true" data-filter="true" data-role="listview">
+					<ul id="wolveslist" data-inset="true"  data-role="listview">
                     </ul>
                 </div>
              </div>
@@ -802,9 +739,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#home" data-icon="home">Home</a></li>
-						
-						
-						
+						<li><a href="#myTown" data-icon="star">My Town</a></li>
 					</ul>
 				</div>
         	</div>
