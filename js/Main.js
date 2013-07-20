@@ -1,10 +1,21 @@
-var neighborType = function(race, page){
+/*var neighborType = function(race, page){
 	html = '';
 	for(var n in neighbors){
 		if(neighbors[n].type === race){
 			html += '<div data-role="collapsible" data-content-theme="b"><h3>'+neighbors[n].name+'</h3><ul><li>Type: '+neighbors[n].type+'</li><li>Personality: '+neighbors[n].pers+'</li><li>Birthday: '+neighbors[n].birthday+'</li><li>Favorite Coffee Bean: '+neighbors[n].favCoffee[0]+'</li><li>Favorite Coffee Milk: '+neighbors[n].favCoffee[1]+'</li><li>Favorite Coffee Sugar: '+neighbors[n].favCoffee[2]+'</li><li>Favorite Style: '+neighbors[n].favStyle+'</li><li>Favorite Song: '+neighbors[n].favSong+'</li></ul></div>'
 		}
 	}
+	$('#'+page+'list').html(html)
+}*/
+
+var neighborType = function(race, page){
+	html = '<table data-role="table" class="ui-body-b table-stripe ui-responsive"><thead><tr class="ui-bar-d"><th>Name</th><th>Personality</th><th>Birthday</th><th>Favorite Coffee Bean</th><th>Favorite Coffee Milk</th><th>Favorite Coffee Sugar</th><th>Favorite Style</th><th>Favorite Song</th></tr></thead><tbody>';
+	for(var n in neighbors){
+		if(neighbors[n].type === race){
+			html += '<tr><th>'+neighbors[n].name+'</th><td>'+neighbors[n].pers+'</td><td>'+neighbors[n].birthday+'</td><td>'+neighbors[n].favCoffee[0]+'</td><td>'+neighbors[n].favCoffee[1]+'</td><td>'+neighbors[n].favCoffee[2]+'</td><td>'+neighbors[n].favStyle+'</td><td>'+neighbors[n].favSong+'</td></tr>';
+		}
+	}
+	html += '</tbody></table>';
 	$('#'+page+'list').html(html)
 }
 
