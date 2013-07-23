@@ -11,6 +11,9 @@
 var neighborType = function(race, page){
 	html = '<table data-role="table" class="ui-body-b table-stripe ui-responsive"><thead><tr class="ui-bar-d"><th>Name</th><th>Personality</th><th>Birthday</th><th>Favorite Coffee Bean</th><th>Favorite Coffee Milk</th><th>Favorite Coffee Sugar</th><th>Favorite Style</th><th>Favorite Song</th></tr></thead><tbody>';
 	for(var n in neighbors){
+		if(race === "all"){
+			html += '<tr><th>'+neighbors[n].name+'</th><td>'+neighbors[n].pers+'</td><td>'+neighbors[n].birthday+'</td><td>'+neighbors[n].favCoffee[0]+'</td><td>'+neighbors[n].favCoffee[1]+'</td><td>'+neighbors[n].favCoffee[2]+'</td><td>'+neighbors[n].favStyle+'</td><td>'+neighbors[n].favSong+'</td></tr>';
+		}
 		if(neighbors[n].type === race){
 			html += '<tr><th>'+neighbors[n].name+'</th><td>'+neighbors[n].pers+'</td><td>'+neighbors[n].birthday+'</td><td>'+neighbors[n].favCoffee[0]+'</td><td>'+neighbors[n].favCoffee[1]+'</td><td>'+neighbors[n].favCoffee[2]+'</td><td>'+neighbors[n].favStyle+'</td><td>'+neighbors[n].favSong+'</td></tr>';
 		}
@@ -18,7 +21,9 @@ var neighborType = function(race, page){
 	html += '</tbody></table>';
 	$('#'+page+'list').html(html)
 }
-
+$('#all').on('pagebeforecreate', function(){
+	neighborType("all","all")
+})
 $('#anteaters').on('pagebeforecreate', function(){
 	neighborType("Anteater", "anteater");
 });
